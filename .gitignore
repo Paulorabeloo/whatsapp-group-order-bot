@@ -1,0 +1,12 @@
+!requirements.txt
+*.corrompido
+*.txt
+.claude/
+.demo/
+.env
+.pytest_cache/
+.venv/
+__pycache__/
+backups/
+chat.txt
+data/

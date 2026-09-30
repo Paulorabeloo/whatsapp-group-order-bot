@@ -1,0 +1,52 @@
+<!doctype html>
+<html lang="pt-BR"><head><meta charset="utf-8"><title>Antes e depois</title>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,500;12..96,800&family=Figtree:wght@400;500;600;700&display=swap">
+<style>
+:root{--bg:#141A17;--card:#1C2420;--linha:#2A3530;--tinta:#EEF2EF;--suave:#9AA8A1;--verde:#5FD29B;--verde2:#1F7A55;--cinza:#5B6863;
+  --display:"Bricolage Grotesque",system-ui,sans-serif;--texto:"Figtree",system-ui,sans-serif}
+*{box-sizing:border-box}
+html,body{margin:0;width:1200px;height:1200px;background:var(--bg);color:var(--tinta);font-family:var(--texto)}
+.wrap{padding:72px 80px;height:100%;display:flex;flex-direction:column}
+.eyebrow{font:600 15px/1 var(--texto);letter-spacing:.14em;text-transform:uppercase;color:var(--verde)}
+h1{font:800 56px/1.02 var(--display);letter-spacing:-.025em;margin:18px 0 10px;max-width:16ch}
+.sub{font-size:22px;color:var(--suave);margin:0 0 44px;max-width:44ch;line-height:1.35}
+.grid{display:grid;grid-template-columns:1.25fr 1fr 1fr;gap:0;border:1px solid var(--linha);border-radius:24px;overflow:hidden;background:var(--card);flex:1}
+.cell{padding:30px 32px;border-bottom:1px solid var(--linha);border-right:1px solid var(--linha);display:flex;flex-direction:column;justify-content:center;min-height:0}
+.cell:nth-child(3n){border-right:0}
+.grid > .cell:nth-last-child(-n+3){border-bottom:0}
+.head{font:600 14px/1 var(--texto);letter-spacing:.12em;text-transform:uppercase;color:var(--suave);padding:22px 32px;justify-content:center}
+.head.dep{color:var(--verde)}
+.m{font:500 22px/1.25 var(--display);color:var(--tinta)}
+.m small{display:block;font:400 16px/1.35 var(--texto);color:var(--suave);margin-top:6px}
+.v{font:800 46px/1 var(--display);letter-spacing:-.02em}
+.v small{display:block;font:500 17px/1.3 var(--texto);color:var(--suave);margin-top:10px;letter-spacing:0}
+.antes .v{color:#C9D1CC}
+.dep .v{color:var(--verde)}
+.dep{background:rgba(95,210,155,.06)}
+.foot{display:flex;justify-content:space-between;align-items:center;margin-top:30px;font-size:16px;color:var(--suave)}
+.foot b{color:var(--tinta);font-weight:600}
+.tag{border:1px solid var(--linha);border-radius:999px;padding:8px 14px;font-size:14px;color:var(--suave)}
+</style></head><body><div class="wrap">
+  <div class="eyebrow">Automação de grupo de vendas no WhatsApp</div>
+  <h1>O que mudou quando o robô assumiu a lista</h1>
+  <p class="sub">Grupo com ~340 membros, várias aberturas de produto por dia. Métricas que não dependem de qual produto foi vendido: só do processo.</p>
+  <div class="grid">
+    <div class="cell head">Métrica</div><div class="cell head">Antes, à mão</div><div class="cell head dep">Com o robô</div>
+
+    <div class="cell"><div class="m">Tempo entre o pedido e a lista atualizada<small>Do "5ml" do cliente até a lista nova no grupo</small></div></div>
+    <div class="cell antes"><div class="v">6 min<small>mediana · média de 46 min<br>1 em cada 4 esperou mais de 30 min</small></div></div>
+    <div class="cell dep"><div class="v">~1 min<small>mediana de 62 s<br>90% em até 100 s (84 pedidos)</small></div></div>
+
+    <div class="cell"><div class="m">Abertura no horário anunciado<small>Diferença entre a hora prometida e a hora real</small></div></div>
+    <div class="cell antes"><div class="v">7 min<small>de atraso, na mediana<br>nenhuma abertura no minuto exato</small></div></div>
+    <div class="cell dep"><div class="v">0 min<small>9 de 9 aberturas,<br>todas em até 15 s</small></div></div>
+
+    <div class="cell"><div class="m">Mensagens de rotina digitadas pela equipe<small>Post, contagem, listas, chamadas, frasco fechado</small></div></div>
+    <div class="cell antes"><div class="v">~15/dia<small>por dia de venda (mediana)</small></div></div>
+    <div class="cell dep"><div class="v">0<small>nos perfumes do sistema; o robô manda<br>~50 por dia com 3 aberturas</small></div></div>
+  </div>
+  <div class="foot">
+    <span>Antes: <b>histórico de 22/06 a 04/09</b> (366 pedidos, 33 aberturas, 63 dias de venda). Depois: <b>25 a 30/09</b>.</span>
+    <span class="tag">Python · FastAPI · 358 testes</span>
+  </div>
+</div></body></html>

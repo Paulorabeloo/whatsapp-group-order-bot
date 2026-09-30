@@ -1,0 +1,52 @@
+<!doctype html>
+<html lang="en"><head><meta charset="utf-8"><title>Antes e depois</title>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,500;12..96,800&family=Figtree:wght@400;500;600;700&display=swap">
+<style>
+:root{--bg:#141A17;--card:#1C2420;--linha:#2A3530;--tinta:#EEF2EF;--suave:#9AA8A1;--verde:#5FD29B;--verde2:#1F7A55;--cinza:#5B6863;
+  --display:"Bricolage Grotesque",system-ui,sans-serif;--texto:"Figtree",system-ui,sans-serif}
+*{box-sizing:border-box}
+html,body{margin:0;width:1200px;height:1200px;background:var(--bg);color:var(--tinta);font-family:var(--texto)}
+.wrap{padding:72px 80px;height:100%;display:flex;flex-direction:column}
+.eyebrow{font:600 15px/1 var(--texto);letter-spacing:.14em;text-transform:uppercase;color:var(--verde)}
+h1{font:800 56px/1.02 var(--display);letter-spacing:-.025em;margin:18px 0 10px;max-width:16ch}
+.sub{font-size:22px;color:var(--suave);margin:0 0 44px;max-width:44ch;line-height:1.35}
+.grid{display:grid;grid-template-columns:1.25fr 1fr 1fr;gap:0;border:1px solid var(--linha);border-radius:24px;overflow:hidden;background:var(--card);flex:1}
+.cell{padding:30px 32px;border-bottom:1px solid var(--linha);border-right:1px solid var(--linha);display:flex;flex-direction:column;justify-content:center;min-height:0}
+.cell:nth-child(3n){border-right:0}
+.grid > .cell:nth-last-child(-n+3){border-bottom:0}
+.head{font:600 14px/1 var(--texto);letter-spacing:.12em;text-transform:uppercase;color:var(--suave);padding:22px 32px;justify-content:center}
+.head.dep{color:var(--verde)}
+.m{font:500 22px/1.25 var(--display);color:var(--tinta)}
+.m small{display:block;font:400 16px/1.35 var(--texto);color:var(--suave);margin-top:6px}
+.v{font:800 46px/1 var(--display);letter-spacing:-.02em}
+.v small{display:block;font:500 17px/1.3 var(--texto);color:var(--suave);margin-top:10px;letter-spacing:0}
+.antes .v{color:#C9D1CC}
+.dep .v{color:var(--verde)}
+.dep{background:rgba(95,210,155,.06)}
+.foot{display:flex;justify-content:space-between;align-items:center;margin-top:30px;font-size:16px;color:var(--suave)}
+.foot b{color:var(--tinta);font-weight:600}
+.tag{border:1px solid var(--linha);border-radius:999px;padding:8px 14px;font-size:14px;color:var(--suave)}
+</style></head><body><div class="wrap">
+  <div class="eyebrow">WhatsApp sales-group automation</div>
+  <h1>What changed when the bot took over the list</h1>
+  <p class="sub">A ~340-member group with several product openings a day. Metrics that do not depend on which product was sold: only on the process.</p>
+  <div class="grid">
+    <div class="cell head">Metric</div><div class="cell head">Before, by hand</div><div class="cell head dep">With the bot</div>
+
+    <div class="cell"><div class="m">Time from order to updated list<small>From the customer's "5ml" to the new list in the group</small></div></div>
+    <div class="cell antes"><div class="v">6 min<small>median · 46 min average<br>1 in 4 waited more than 30 min</small></div></div>
+    <div class="cell dep"><div class="v">~1 min<small>62 s median<br>90% within 100 s (84 orders)</small></div></div>
+
+    <div class="cell"><div class="m">Opening at the announced time<small>Gap between the promised time and the real one</small></div></div>
+    <div class="cell antes"><div class="v">7 min<small>late, at the median<br>no opening on the exact minute</small></div></div>
+    <div class="cell dep"><div class="v">0 min<small>9 of 9 openings,<br>all within 15 s</small></div></div>
+
+    <div class="cell"><div class="m">Routine messages typed by the team<small>Post, countdown, lists, nudges, bottle closed</small></div></div>
+    <div class="cell antes"><div class="v">~15/day<small>per selling day (median)</small></div></div>
+    <div class="cell dep"><div class="v">0<small>on products run by the bot, which sends<br>~50 a day with 3 openings</small></div></div>
+  </div>
+  <div class="foot">
+    <span>Before: <b>chat history Jun 22 to Sep 4</b> (366 orders, 33 openings, 63 selling days). After: <b>Sep 25 to 30</b>.</span>
+    <span class="tag">Python · FastAPI · 358 tests</span>
+  </div>
+</div></body></html>

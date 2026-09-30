@@ -1,0 +1,25 @@
+[Unit]
+Description=Robô do Grupo (WhatsApp + painel)
+After=network-online.target
+Wants=network-online.target
+
+[Service]
+Type=simple
+User=robo
+Group=robo
+WorkingDirectory=/opt/robo-grupo
+EnvironmentFile=/opt/robo-grupo/.env
+ExecStart=/opt/robo-grupo/.venv/bin/python main.py
+Restart=always
+RestartSec=5
+# se travar sem cair, o systemd derruba e sobe de novo
+TimeoutStopSec=20
+KillSignal=SIGINT
+# endurecimento basico
+NoNewPrivileges=true
+PrivateTmp=true
+ProtectSystem=full
+ReadWritePaths=/opt/robo-grupo/data /opt/robo-grupo/backups
+
+[Install]
+WantedBy=multi-user.target

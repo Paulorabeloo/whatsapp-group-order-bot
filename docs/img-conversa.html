@@ -1,0 +1,66 @@
+<!doctype html>
+<html lang="pt-BR"><head><meta charset="utf-8"><title>Conversa simulada</title>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,800&family=Figtree:wght@400;500;600;700&display=swap">
+<style>
+*{box-sizing:border-box}
+html,body{margin:0;width:1200px;height:1200px;background:#141A17;font-family:"Figtree",system-ui,sans-serif;color:#EEF2EF}
+.wrap{padding:44px 80px;height:100%;display:grid;grid-template-columns:1fr 520px;gap:56px;align-items:center}
+.left h1{font:800 48px/1.04 "Bricolage Grotesque",system-ui,sans-serif;letter-spacing:-.025em;margin:0 0 18px}
+.eyebrow{font:600 15px/1 Figtree;letter-spacing:.14em;text-transform:uppercase;color:#5FD29B;margin-bottom:18px}
+.left p{font-size:21px;line-height:1.45;color:#9AA8A1;margin:0 0 26px;max-width:38ch}
+.pt{display:grid;gap:14px}
+.pt div{display:grid;grid-template-columns:40px 1fr;gap:12px;align-items:start;font-size:19px;line-height:1.4}
+.pt b{color:#EEF2EF}
+.ic{width:40px;height:40px;border-radius:12px;background:rgba(95,210,155,.12);color:#5FD29B;display:grid;place-items:center;font-weight:800;font-size:18px}
+/* telefone */
+.phone{width:520px;height:1100px;border-radius:44px;background:#0B141A;border:10px solid #1F2A25;box-shadow:0 40px 100px -30px rgba(0,0,0,.8);overflow:hidden;position:relative}
+.top{background:#1F2C34;color:#E9EDEF;padding:20px 18px 12px;display:flex;align-items:center;gap:12px}
+.av{width:42px;height:42px;border-radius:50%;background:#2F6F62;display:grid;place-items:center;font:800 16px "Bricolage Grotesque",sans-serif}
+.top b{display:block;font-size:17px}
+.top small{color:#8696A0;font-size:13px}
+.chat{padding:12px 12px;display:flex;flex-direction:column;gap:5px;background:#0B141A url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='60' height='60'%3E%3Ccircle cx='30' cy='30' r='1.2' fill='%231a252b'/%3E%3C/svg%3E")}
+.b{max-width:88%;border-radius:12px;padding:7px 10px;font-size:13.5px;line-height:1.3;position:relative;box-shadow:0 1px 1px rgba(0,0,0,.4)}
+.in{background:#202C33;color:#E9EDEF;align-self:flex-start;border-top-left-radius:3px}
+.bot{background:#005C4B;color:#E9EDEF;align-self:flex-end;border-top-right-radius:3px}
+.nome{font-weight:700;font-size:13px;margin-bottom:2px}
+.n1{color:#53BDEB}.n2{color:#E542A3}.n3{color:#F9B233}.nb{color:#FF8A65}
+.q{border-left:3px solid #5FD29B;background:rgba(255,255,255,.06);border-radius:6px;padding:5px 8px;font-size:12.5px;color:#B7C2C6;margin-bottom:5px}
+.q b{color:#5FD29B;display:block;font-size:12px}
+.t{font-size:11px;color:#8696A0;text-align:right;margin-top:3px}
+.react{position:absolute;left:8px;bottom:-12px;background:#202C33;border:1px solid #0B141A;border-radius:999px;padding:1px 6px;font-size:12px}
+.mb{margin-bottom:9px}
+.lista{white-space:pre-line;font-size:13px}
+.foto{width:100%;height:72px;border-radius:8px;background:linear-gradient(135deg,#3b2f2a,#7a5b3e 60%,#c89b5a);margin-bottom:6px;display:grid;place-items:center;color:rgba(255,255,255,.75);font-size:12px;letter-spacing:.1em}
+.sys{align-self:center;background:#182229;color:#8696A0;font-size:12px;border-radius:8px;padding:5px 10px}
+</style></head><body><div class="wrap">
+  <div class="left">
+    <div class="eyebrow">Como o robô lê o grupo</div>
+    <h1>Pedido em texto livre vira lista atualizada em 1 minuto</h1>
+    <p>Nada de formulário. As pessoas escrevem como sempre escreveram, e o robô resolve pra qual produto cada pedido vai.</p>
+    <div class="pt">
+      <div><span class="ic">1</span><span><b>Responder o post</b> garante o produto certo, mesmo com vários abertos.</span></div>
+      <div><span class="ic">2</span><span><b>Reação 👍</b> = anotado. A lista sai sozinha, com a foto e as @marcações.</span></div>
+      <div><span class="ic">3</span><span><b>APC, alterações e cancelamentos</b> também em texto livre.</span></div>
+      <div><span class="ic">4</span><span><b>Na dúvida, não anota</b> e avisa um humano.</span></div>
+    </div>
+  </div>
+  <div class="phone">
+    <div class="top"><div class="av">D</div><div><b>Decants Club | Grupo 1</b><small>342 participantes</small></div></div>
+    <div class="chat">
+      <div class="sys">Robô abriu o grupo · 18:00</div>
+      <div class="b bot mb"><div class="nome nb">Robô</div>✨ NOIR SANTAL | MAISON ALPHA<br>Valor por ml: R$ 18,00 · Mínimo: 3 ml<br>💎 5 ml: R$ 90,00 | MAIS SOLICITADO<br>👑 20 ml: R$ 360,00 | O primeiro que pedir leva o APC<div class="t">18:00</div></div>
+      <div class="b in mb"><div class="nome n1">Ana</div><div class="q"><b>Robô</b>✨ NOIR SANTAL | MAISON ALPHA…</div>5ml<div class="t">18:00</div><span class="react">👍</span></div>
+      <div class="b in mb"><div class="nome n2">Bruno</div>apc<div class="t">18:00</div><span class="react">👍</span></div>
+      <div class="b in mb"><div class="nome n3">Clara</div><div class="q"><b>Robô</b>✨ NOIR SANTAL | MAISON ALPHA…</div>quero 3 ml pra conhecer<div class="t">18:01</div><span class="react">👍</span></div>
+      <div class="b bot mb"><div class="nome nb">Robô</div><div class="foto" style="height:56px">NOIR SANTAL · 60 ml</div><div class="lista">👑 Bruno | APC + 20 ml 👑 @Bruno
+
+💎 5ml - Ana @Ana
+💎 3ml - Clara @Clara
+
+Disponível 32 ml</div><div class="t">18:01</div></div>
+      <div class="b in mb"><div class="nome n1">Ana</div>altera pra 10ml<div class="t">18:03</div><span class="react">👍</span></div>
+      <div class="b in"><div class="nome n2" style="color:#7BC862">Davi</div>30ml<div class="t">18:04</div></div>
+      <div class="b bot"><div class="nome nb">Robô</div>@Davi Restam só 27 ml do NOIR SANTAL 🙏<div class="t">18:04</div></div>
+    </div>
+  </div>
+</div></body></html>

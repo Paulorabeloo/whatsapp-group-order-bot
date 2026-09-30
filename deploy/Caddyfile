@@ -1,0 +1,5 @@
+DOMINIO {
+	encode gzip
+	reverse_proxy 127.0.0.1:8080
+	# o painel ja pede senha; aqui so HTTPS automatico (Let's Encrypt) e compressao
+}
