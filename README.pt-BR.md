@@ -82,8 +82,9 @@ perfumes que ele cuida, a equipe não digita nenhuma. Sobras postadas à mão co
   igual à do admin ou com 1 item de diferença em **81%** das fotos da lista.
 - **Primeiro só observando.** Antes de ganhar permissão para falar, o robô leu o grupo real sem mandar nada,
   alimentando a fila de revisão (`Aprender`).
-- **Na dúvida, não anota.** Resposta a uma imagem sem relação, produto que não está aberto, pedido depois de um
-  reinício: o robô não anota e avisa um admin. Uma lista errada custa mais que um pedido perdido.
+- **Na dúvida, não chuta.** Resposta a uma imagem sem relação ou produto que não está aberto: o robô não anota e avisa
+  um admin. Quando precisa deduzir o perfume (um "5ml" solto com vários abertos), anota e confirma no grupo na hora,
+  pra pessoa corrigir. Uma lista errada custa mais que um pedido perdido.
 - **Todo incidente em produção virou teste.** Exemplos: tamanho do APC fora da tabela de preços, duas aberturas com
   1 hora de diferença fechando o grupo uma em cima da outra, palavra de intenção do cliente lida como nome.
 

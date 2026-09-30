@@ -81,8 +81,9 @@ products it runs, the team types none of them. Leftovers posted by hand are stil
   matched the admin's exactly or within one item in **81%** of the list snapshots.
 - **Observe mode first.** Before it was allowed to speak, the bot read the real group without sending anything,
   feeding a review queue (`Aprender`).
-- **Fail closed.** When in doubt (a reply to an unrelated image, a product that isn't open, an order after a restart)
-  the bot does not book the order. It notifies an admin instead. A wrong list costs more than a missed one.
+- **No silent guesses.** When in doubt (a reply to an unrelated image, a product that isn't open) the bot does not
+  book the order and notifies an admin. When it has to infer the product (a bare "5ml" with several open), it books
+  it and confirms in the group right away, so the customer can correct it. A wrong list costs more than a missed one.
 - **Every production incident became a test.** Examples: a first-come item size missing from the price table, two
   openings one hour apart closing the group on top of each other, a customer's intent word parsed as their name.
 
